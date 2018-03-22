@@ -1,5 +1,7 @@
 # Menu component
 
+[pagina](https://nielsfs.github.io/browser-technologies/opdracht2/Menu/Menu.html)
+
 ## Wat doet dit component?
 
 Navigatiemenu gemaakt dat op kleinere schermen/window veranderd in een uitklapbaar menu. Hierbij heb ik rekening gehouden met de core functionaliteit van mijn menu. Dat houdt in dat hij in enkel HTML naar behoren werkt. Vervolgens heb ik daar een laag css aan toegevoegd en met javascript heb ik bewerkstelligt dat hij ook daadwerkelijk uitklapt. Wanneer je Javascript uitzet dan werkt hij nog het zelfde, en hetzelfde geld voor wanneer je css uitzet.
