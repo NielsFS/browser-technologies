@@ -37,6 +37,7 @@
 		background: #ffffff;
 		padding-left: 100%;
 		height: 1.5em;
+		box-shadow: 0px 3px 13px -3px rgba(0,0,0,0.75);
 	}
 
 	.nav-menu {
@@ -125,14 +126,16 @@
 
 </style>
 </head>
+
 <body>
 	<div class="gradient"></div>
 	<nav class="toggle-menu">
 		<a href="#Menu">Menu</a>
 	</nav>
+
 	<section>
 		<p>
-		What is Lorem Ipsum?
+What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 Why do we use it?
@@ -148,6 +151,7 @@ Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 		</p>
 	</section>
+
 	<nav class="nav-menu">
 		<a name="Menu"></a>
 		<ul>
@@ -157,32 +161,35 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 			<li><a href="#Contact">Contact</a></li>
 		</ul>
 	</nav>
-<script type="text/javascript"> 
 
-(function() {
-    var toggleNav = document.querySelector('.toggle-menu a');
-    var nav = document.querySelector('.nav-menu');
-    var overlay = document.querySelector('.gradient');
-    var body = document.querySelector('body');
+<script> 
 
-    nav.classList.add('fixed');
-    toggleNav.innerHTML = "☰"
+if(document.querySelectorAll){
+    
+	    var toggleNav = document.querySelector('.toggle-menu a');
+	    var nav = document.querySelector('.nav-menu');
+	    var overlay = document.querySelector('.gradient');
+	    var body = document.querySelector('body');
 
-      toggleNav.addEventListener('click', function(e) {
-		e.preventDefault()
+	    nav.classList.add('fixed');
+	    toggleNav.innerHTML = "☰"
 
-          nav.classList.toggle('show');
+	      toggleNav.addEventListener('click', function(e) {
+			e.preventDefault()
 
-          body.classList.toggle('overflow');
-          overlay.classList.toggle('overlay');
+	          nav.classList.toggle('show');
+	          body.classList.toggle('overflow');
+	          overlay.classList.toggle('overlay');
 
-          if (toggleNav.innerHTML == "☰") {
-              toggleNav.innerHTML = "╳";
-          } else {
-              toggleNav.innerHTML = "☰";
-          }
-      });
-})();
+	          if (toggleNav.innerHTML == "☰") {
+	              toggleNav.innerHTML = "╳";
+	          } else {
+	              toggleNav.innerHTML = "☰";
+	          }
+	      });
+};
+
+	
 
 </script>
 </body>
