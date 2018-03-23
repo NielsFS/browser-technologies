@@ -6,7 +6,13 @@
  
     <style>
 
-     .slider-holder {
+
+        span {
+            display: none;
+            visibility: hidden;
+        }
+
+        .slider-holder {
             width: 800px;
             
             margin-left: auto;
@@ -70,6 +76,8 @@
             bottom: 10px;
             left: 0;
             right: 0;
+            display: none;
+            visibility: hidden;
         }
         
         .slider-change {
@@ -79,6 +87,11 @@
             border-radius: 25px;
             background-color: white;
             border: 1px solid black;
+        }
+
+        .show {
+            display: block;
+            visibility: visible;
         }
 
     </style>
@@ -101,10 +114,14 @@
     </section>
 <script>
 
-if(document.querySelectorAll){
+if(document.documentElement.classList && document.querySelectorAll){
 
     var carousel = document.querySelector('.text-holder');
+    var buttons = document.querySelector('.button-holder');
+
     carousel.classList.add('enable-feature');
+    buttons.classList.add('show');
+
 };
 
 </script>
