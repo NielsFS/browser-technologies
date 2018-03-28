@@ -134,7 +134,7 @@ a {
 }
 
 p {
-	font-family: 'Raleway', 'serif';
+	font-family: 'Raleway', sans-serif, serif;
 	font-size: 20px;
 	font-weight: bold;
 	background: white;
@@ -213,7 +213,7 @@ h2{
 	margin-left: 2.5%;
 	margin-bottom: 20vh;
 	z-index: -1;
-	font-family: 'Raleway', 'serif';
+	font-family: 'Raleway', sans-serif, serif;
 }
 
 .logo {
@@ -253,7 +253,7 @@ beschrijving
 }
 
 h4 {
-	font-family: 'Raleway', 'serif';
+	font-family: 'Raleway', sans-serif, serif;
 	font-size: 14px;
 	padding: 5% 5%;
 	height: 100%;
@@ -265,7 +265,7 @@ h4 {
 }
 
 h3 {
-	font-family: 'Raleway', 'serif';
+	font-family: 'Raleway', sans-serif, serif;
 	font-size: 20px;
 }
 

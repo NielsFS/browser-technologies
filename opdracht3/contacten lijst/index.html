@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 	<title>contacten</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<header id="header">
+	<div id="header">
 		<h1>Contacten</h1>
-	</header>
+	</div>
 
 	<div id="contacten">
 		<section id="A">
@@ -242,9 +242,6 @@
 		</section>
 	</div>
 
-	<div id="contacten-info">
-	</div>
-
 <script>
 
 	/*####################################*/
@@ -253,11 +250,16 @@
 
 if(document.documentElement.classList && document.querySelectorAll){
 
-		var detailContainer = document.getElementById('contacten-info');
+		var contacten = document.querySelector('body');
+
+		var detailContainer = document.createElement('div');
+		detailContainer.id = "contacten-info"
+
+		contacten.appendChild(detailContainer);
 
 
 		var head = document.createElement('div');
-        head.class = 'head'; 
+        head.className = 'head'; 
 
         var details = document.createElement('ul');
         details.className = 'details';
@@ -272,6 +274,12 @@ if(document.documentElement.classList && document.querySelectorAll){
         back.href = 'contacten.html';
         back.className = 'back';
         head.appendChild(back);
+
+        var image = document.createElement('img');
+        image.src = "http://nerdragenews.com/wp-content/uploads/2017/01/stevens-michael-image.jpg";
+        image.alt = "Aard"
+        image.className = "image";
+        head.appendChild(image);
 
         var detailName = document.createElement('h3');
         detailName.innerHTML = 'Aard';
@@ -296,8 +304,9 @@ if(document.documentElement.classList && document.querySelectorAll){
         // details on one page
 
 	    var info = document.querySelector('#contacten-info');
-	    var back = document.querySelector('.back')
+	    var back = document.querySelector('.back');
 	    var body = document.querySelector('body');
+	    var contacten = document.querySelector('#contacten');
 	    var link = document.querySelectorAll('#contacten a');
 
 	    info.classList.add('fixed');
@@ -308,7 +317,10 @@ if(document.documentElement.classList && document.querySelectorAll){
         	  e.preventDefault()
 
         	  info.classList.add('show');
-	          body.classList.toggle('overflow');
+	          body.classList.add('overflow');
+	          contacten.classList.add('overflow');
+
+	          document.querySelector(".back").focus();
 
     		}
 		}
@@ -317,7 +329,8 @@ if(document.documentElement.classList && document.querySelectorAll){
 			e.preventDefault()
 
 	          info.classList.remove('show');
-	          body.classList.toggle('overflow');
+	          body.classList.remove('overflow');
+	          contacten.classList.remove('overflow');
 		});
 	};
 
@@ -376,8 +389,7 @@ if(document.documentElement.classList && document.querySelectorAll){
 		  
 		var filterValue = document.getElementById('filterInput').value.toUpperCase();
 		var container = document.getElementById('contacten');
-	    var h2 = container.getElementsByTagName('h2');
-	    var ul = container.getElementsByTagName('ul');
+	    
 	    var li = container.getElementsByTagName('li');
 
 	    for(var i = 0;i < li.length;i++){

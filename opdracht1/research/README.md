@@ -8,9 +8,13 @@ Het niet laden van afbeeldingen is uiteraard enorm jammer aangezien dat voor een
 
 Alles werkt in Principe. Titels worden weergegeven en de bijbehorende beschrijvingen zie je gewoon
 
+![](https://lh3.googleusercontent.com/HpOj6_8mq2zr55eZX1eQGe3WYnZD9eeDxEzp-5OWGAz1tuQ4M7Ur3xM9aCj4bSaa7Vl7BDSxghLwc2cMbzwlvI4UVnfffqzI2RMvLl1DiVAl4p1jqtqEfQJsw9q6Xyxl8MKtXh6kvJlmKXWcYZX-IQ0w-Uj2ZPRnvoAZlStMzjPaJIAO14ES5IWKN2AVgznHrtLVaeA9zd5_YfSdGI1hPoXacEQNbdsRXdhKl9lSowJwFm288FnX2ibzCX5xYZtJSsQh02LQW8_cJJSVXo3Tv5t-AvrEoTIK0S8fWAmpbiLjCut4dtVI8nxy2MLIwetX2mHeRpUfLE4YzNq6jT5VeP_CGTogSI4tlAnAuP9w9ZC56sYVxVQbhnjReBoGOsn-DdaaATPzxk8Uf48CuCKbTEIBOg_KmX13eq-n3tmuiWr1JtscGCl4_VV-V9mRowfrdXXI8sIQ03dTJPAyD9_yL-nIGKb-9ZoTMIvs6fEqq1fPljWZTb_KWw9FyPAl2O-Ebk510vQZ2vnLYhUNw2LRvlFaah6Zz_ie-9ac9IP3lgIQ199Pc_9ROMklcYwfSpledwiD8jg5qwYPCQ0U2zB6VvSBpbtyLU5eR0_hg0s=w525-h290-no)
+
 ### 2.Custom fonts.
 
 De standaard font is een google font. Wanneer die niet werkt heb ik een aantal fallback fonts. Het gebruik van custom fonts vertraagt mijn pagina niet echt. De pagina zelf laad snel, alleen de content laad traag. Indien ik een zwaardere website zou moeten laden dan had ik gebruik kunnenmaken van “font-display: swap;” Dit zorgt er voor dat de custom font pas geladen wordt nadat de pagina geladen is. 
+
+	font-family { 'Raleway', sans-serif, serif;}
 
 ### 3.Javascript *
 
@@ -23,13 +27,17 @@ Oplossing: Server side renderen
 
 Mijn pagina ziet er goed uit voor alle vormen van kleurenblindheid. Echter is het iets minder makkelijk om bepaalde focus en hover states goed te zien. Dit zou verbeterd kunnen worden.
 
+Met de Funkify extensie voor Chrome heb ik de verschillende vormen van kleurenblindheid getest. Echter kan de kleurentest om bepaalde redenen niet de achtergrond (rood) in een grijstint weergeven. Mogelijk omdat ik die met een css truuc heb gemaakt. 
+
+![kleurenblindheid test](https://lh3.googleusercontent.com/7ydn2Ri9hw0j-p5bvji9YZYGRbk0brkboatqStbR_jkyBtIU6bWpN1CMfQ5tddY1YGHdgZRZ-V4_SW7xyzMWkkJfnJuFJPHbf8EUB3OaSUAEeFsgdg6l7ATMKZ68ni8ahb6FdcnxNlJ4xG5StCcvKlnTLwKOiGrL8aMT8kXYukgYEcrBMbaAC8qITkg2ZSxtxgHArVkmQ_pgBRxXdW-y6dzq4C6SLW9Vj9p84mAc6ViV_Bf6ysGlRiUhKpotDX0YYIrxougxt8oD9vHC0wt7XT4o7DJVWvV4ICweHahb5p-ZfekLkijdqmz_8qdFn6CkDSvqW4-0oVFFwaWVYztRPGWucyXBLXCT8z3OcUUea-Ng0Bgy_jHlPazZwmdXgXq0si07134Vlu_VLcgpMAB34s2xZZOrZc43jd4H1Z-8BAJYUSmqZ8ilYhoZYQ3HuHgRqav8B8C0K3VGkxm3irXC5UZ7S0SLiDFRa8S1VZmsxYg93zaON7dqAfkiFnMTFQXJnAYaPgsIR7J7FoDyKgSY6fBjrbmSxaC_wTei4PJX2o66AIV58xpulYR_tFaY19xD3tVZMybTsZa3dhi4vWdNhNY9-rsA8AHUFE5pPno=w656-h270-no)
+
+
 ### 5.Breedband internet *
 
 Op langzaam internet is mijn pagina erg traag. In totaal moeten er 935 afbeeldingen worden
 ingeladen. Op normaal internet doet hij dit goed maar op traag internet doet hij er minuten over.
 
-Oplossing: Een oplossing zou zijn om telkens 10 a 20 resultaten in te laden, en on scroll nog meer 
-resultaten inte laden.
+Oplossing: Een oplossing zou zijn om telkens 10 a 20 resultaten in te laden, en on scroll nog meer resultaten in teladen.
 
 ### 6.Cookies
 
@@ -51,7 +59,7 @@ Linkjes en Href aan gegenereerde content toegevoegd. On click komt focus op de t
 beschrijving te staan. Duidelijke focus states gemaakt. 
 
 
-# Accessibility features
+# extra research
 
 ### Wifi hotspots/https
 Het is belangrijk dat wanneer de web applicatie live gaat dit op een beveiligd netwerk is. Alle links moeten daarom op https staan en er moet een ssl certificaat zijn van de hosting provider.
