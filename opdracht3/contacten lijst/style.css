@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	font-family:'Open Sans', sans-serif, serif;
+}
+
+/*####################################*/
+/*CONTACTEN*/
+/*####################################*/
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2em 2em;
+
+}
+
+
+
+@keyframes letter {
+    0%   {background-color: #23c2db;}
+    33%  {background-color: #1b80e5;}
+    66%  {background-color: #1b94e5;}
+    100%   {background-color: #23c2db;}
+}
+
+h1 {
+	margin: 0;
+	padding: 0 1em;
+	font-size: 3em;
+	color: #000f42;
+
+
+}
+
+h2 {
+	margin:0;
+	background: #1b94e5;
+	padding-left: 10px;
+	position: sticky;
+	top:-0.1em;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	color: white;
+
+	/*animation-name: letter;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;*/
+}
+
+#contacten ul {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#contacten li:last-child {
+	border-bottom: 0;
+}
+
+
+#contacten li {
+	border-bottom: 1px solid #000f42;
+	list-style: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: -1px;
+}
+
+#contacten a {
+	text-decoration: none;
+	color: #000f42;
+
+	display:inline-block;
+    width:100%;
+    height:100%;
+}
+
+/*####################################*/
+/*Informatie*/
+/*####################################*/
+
+#contacten-info {
+	transition: 0.8s ease;
+}
+
+#contacten-info li {
+	border-bottom: 1px solid grey;
+	list-style: none;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#contacten-info h3 {
+	padding-left: 10px;
+}
+
+
+#contacten-info a {
+	text-decoration: none;
+}
+
+
+
+/*####################################*/
+/*Informatie responsive met JS*/
+/*####################################*/
+
+.border-box {
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.fixed {
+	background: white;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top:0;
+	right: -101%;
+}
+
+.show {
+	right: 0;
+}
+
+.overflow {
+		overflow: hidden;
+	}
+
+/*####################################*/
+/*filter styling*/
+/*####################################*/
+
+
+#filterInput {
+	height: 1.5em;
+	background: lightgrey;
+	border: none;
+	border-radius: 1em;
+	text-align: center;
+	width: 100%;
+	max-width: 20em;
+	color: #000f42;
+
+	transition: 0.6s ease;
+}
+
+#filterInput:focus {
+	max-width: 21em;
+	height: 1.55em;
+	font-size: 0.8em;
+	outline: none;
+	
+}
+
+#filterInput::placeholder {
+	color: #000f42;
+}
+
+
+
+
+
+
+
+

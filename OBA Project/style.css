@@ -31,7 +31,7 @@ Navigatie balk
 }
 
 h1{
-	font-family: "Raleway";
+	font-family: "Raleway", "serif";
 	color: black;
 	padding: 0;
 	margin: 0;
@@ -46,7 +46,7 @@ input {
 	border-color: #c10909;
 	height: 25px;
 	width: 150px;
-	font-family: "Raleway";
+	font-family: "Raleway", "serif";
 	background-color: transparent;
 }
 
@@ -79,7 +79,7 @@ button {
 	margin-right: 10px;
 	border: 2px solid #c10909;
 	padding: 7px;
-	font-family: "Raleway";
+	font-family: "Raleway", "serif";
 	color: grey;
 	background-color: white;
 }
@@ -134,7 +134,7 @@ a {
 }
 
 p {
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'serif';
 	font-size: 20px;
 	font-weight: bold;
 	background: white;
@@ -213,7 +213,7 @@ h2{
 	margin-left: 2.5%;
 	margin-bottom: 20vh;
 	z-index: -1;
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'serif';
 }
 
 .logo {
@@ -253,7 +253,7 @@ beschrijving
 }
 
 h4 {
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'serif';
 	font-size: 14px;
 	padding: 5% 5%;
 	height: 100%;
@@ -265,7 +265,7 @@ h4 {
 }
 
 h3 {
-	font-family: 'Raleway';
+	font-family: 'Raleway', 'serif';
 	font-size: 20px;
 }
 
