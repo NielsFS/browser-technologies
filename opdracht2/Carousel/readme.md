@@ -1,6 +1,6 @@
 # Menu component
 
-[pagina](https://nielsfs.github.io/browser-technologies/opdracht2/Carousel/carousel.html)
+[pagina](carousel.niels-schopman.nl)
 
 ## Wat doet dit component?
 
@@ -25,11 +25,13 @@ Dit carousel scrollt tussen 3 vensters. In die vensters heb ik tekst geplaatst, 
 
 ## Welke Browsers/ devices ondersteunen dit
 
-Alle browsers en devices ondersteunen mijn component omdat hij altijd terug valt op de basis html die gewoon leesbaar is. Wanneer een browser niet :target ondersteund dan wordt de carousel een gestylede lijst met alle stukken tekst daar in. 
+Alle browsers en devices ondersteunen mijn component omdat hij altijd terug valt op de basis html die gewoon leesbaar is. Wanneer een browser niet :target ondersteund dan wordt de carousel een gestylede lijst met alle stukken tekst daar in.
+
+De navigatie bolletjes staan standaard op display none. Wanneer Javascript uitgevoerd kan worden dan worden de bolletjes pas zichtbaar. 
 
 Er is een test toegevoegd die checkt of de browser QuerySelector/QuerySelectorAll ondersteund. Wanneer dit niet het geval is dan wordt de Javascript niet uitgevoerd en valt het component terug op de basis HTML en CSS. Toevallig komt de querySelector ondersteuning aan browsers precies overeen met de ondersteuning voor :target. Hierdoor kan ik simpelweg de volgende test doen:
 
-	if(document.querySelectorAll){
+	if(document.documentElement.classList && document.querySelectorAll){
 		<!-- plaats code hier -->
 	};	
 
@@ -41,6 +43,15 @@ Hieronder zie je de ondersteuning voor QuerySelector, en dus de ondersteuning vo
 Hieronder zie je de ondersteuning voor :target in browsers. Deze komt precies overeen met querySelector:
 
 ![caniuse.com](https://lh3.googleusercontent.com/dXVdAfx-N2KxyK9V5gqIPrPA2ERlpTWGosDuRzi85RlvmJRzJ9YCjwZ9HevaYvrkhW4_wesob-R1Tpmq32s_84xbgUei5Uokcxi9LRpBmmkBwfuHZUMdSTNPzU_9edmwLwJ0YRkR8ZM83nqR6FigtmfoRkuhbRhN_wazPX6j9VAkvCvTaBRN9zTp87pjewgx4KQREt3LIdm3jz52LHq5DSmf6B8tsdKcwJptUlMM0gx31Nj62a7lLqMF5MQ85tsAltbGwmVU_4XNY-6f-AWHPIYp2Lg1VQVD1DhUKGrmZvpGlV7kTtWr2hsvIum6AfTYBb6ps6cAvAqhTYUGO1DmBYEKieom8_cMn7qzTAU6d4gpZzUSxaIZAA7CHlmXQFCg4XlpBKBlJg7RXmWJYYEaTK9zEbAbhixysn61KXps5DWmp1wYn2U_EJa1bXraGtXL__eEVGsnRRh4LCYYRq9BqLZusqNehhYodbAtockXi2EsCO_Tcxwceqxwy0sDq5LlGsb4gPCz8YBPMW7flEweUassmPhyZpuQB4fDfIiI6IzWG_lHgZKXYVm2dSGZIq78D4RvGJhuk28Wq_KPYdbr4-WawSYCECxc-ARlyeo=w2004-h978-no)
+
+De volgende browsers ondersteunen de de carousel:
+<b>QuerySelector: IE9/ Firefox 5/ Chrome 4 (getest tot 10)/ Safari 3.1/ IOS Safari 3.2/ Android 2.1</b> --- <b>ClassList vanaf eerste deelse ondersteuning: IE10/ Edge 12/ Firefox 3.6/ Chrome 8/ Safari 5.1/ IOS Safari 5.1</b>
+
+Hieronder zie je dat in ie9 de feature uitstaat doordat classlist niet ondersteund wordt. In Ie10 wordt hij wel ondersteund
+
+![IE9](https://lh3.googleusercontent.com/BrB97nQaMyKnVaOucIinnSW9-Fpc5c2tnkqoWrD2uNGAMHySPMnT4TY-lXKGJfy5YKMCKsiPBLYPpbg5E8uviFJJFR7-V__Sny1bVLKDo3kcFFfMrgHbWl688rUdjN03nIn2hKMIvfLaKSK5TYq0b7WBsM-q4hnpgeBtmnO8UVNSCY0creCx8aKa943wDNzuHAvg-QvH8auJf76crYpCIvw6kbkuqKBkNAHaOu8INooKerwTl3Kwh41SaR6I9CW06h_U1Mw5C-YWGEjK0BVO2lFBFCBJjdWD5hPp06yE83DaRVasD7tzMG4WeHSh2lc66Qt8KEa0XkcQP04USisqGbMwrOwaQtoAPT32e0CQTqveJc7UyaG4VnNNyRndTJIDe6MJghSveJxJ5n-DfmvQG6ZLSf6BBG1d4Uywyc058o6gY2cIUz2lQgnl5pLMSarWGejqgRSEX6P-MWx-IH2rfoF6UXEg--14-V8ekRuZ4Op3OKZZDsz6kaSP0cxRGDrxFCAyk5vdMEOUQquZK6-iTc0V5yI5XhyudYhj8bihollTXR6KZwvhwoCIcRScfKS-EjB2gjHGPR4UAL7ykrapzHVOhGFpn9B2PqNP_9c=w860-h1060-no)
+
+![IE10](https://lh3.googleusercontent.com/7hj-rIEiqT34PH3j9YgKk18Lgz01auRP1KX8yvUGe_q6QdYbO9YQC84IKUpbWO1JbulgL7IK91uOIe3FhImDno3iQcMLpQa3hruaUeKk0_gyH2NwuVJaXgC0BXSnizLCh7CodoQYjIIZ5sz5lgEPRo17DcqkWddGAUQzU9xIMJ74JqveLSqmrj3VVM54-uatmNR60K87HYlGZIr3WqoQn05Zs6VP9wy97CpLZcm_u98zNZkGgMP3LeFkcYhsMy6I6yERDm7RzJlGAzWgEvDJqF21mzQ6c1nS9tIoHQFFcbTgbZOSzrPHldJ-0CW8PutYA8NwYnGmbM2JAEOftFN1X4-fBKzpjSj9rl2cpQkGx4GsK0qpeMD2gG6KtP6tMVy95i64CHRJD1hVnuKUmckB-CO2mPtpG_4f4ZTsQZox1EAuxED35x1yHA0nm4_j8QFGbKBATHq62S9eK4EZ8sEPCWxH2xHFzsXgDqtBh1BREQ52e1jeQTpXUaRPfL2wYobjKRdbuwsszBAKAu91zEMpuMz-atCTi_LRn4K0oZf2YkN1h38xMo2wHXx5QwK36u7mmc0YIcWCsIbH3Xpzj1fAgzT4wERG6L-jH3mi5D4=w832-h858-no)
 
 ## Hoe ik er voor heb gezorgd dat de core functionaliteit het overal doet
 
@@ -56,10 +67,12 @@ Nadat de basis html stond ben ik doorgegaan met het toevoegen van css. Ik heb de
 
 Ik heb In Javascript een kort scriptje gemaakt die checkt of een browser querySelector ondersteund. Toevallig had ik gezien op caniuse dat de ondersteuning hiervan hetzelfde is als :target over alle browsers. Hierdoor heb ik de volgende test gemaakt:
 
-	if(document.querySelectorAll){
+	if(document.documentElement.classList && document.querySelectorAll){
     var carousel = document.querySelector('.text-holder');
+    var buttons = document.querySelector('.button-holder');
     carousel.classList.add('enable-feature');
-    };
+    buttons.classList.add('show');
+	};
 
 Waneer de browser door de check komt dan wordt er een css class toegevoegd die de carousel in werking zet.
 

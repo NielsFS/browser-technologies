@@ -22,7 +22,7 @@ De basis van mijn component is het weergeven van cotactinformatie uit een lijst 
 #### JavaScript
 
 Alle Javascript wordt ondersteund op de volgende browsers:
-<b>QuerySelector: IE10/ Firefox 5/ Chrome 4 (getest tot 10)/ Safari 3.1/ IOS Safari 3.2/ Android 2.1</b> --- <b>ClassList vanaf eerste deelse ondersteuning: IE10/ Edge 12/ Firefox 3.6/ Chrome 8/ Safari 5.1/ IOS Safari 5.1</b>
+<b>QuerySelector: IE9/ Firefox 5/ Chrome 4 (getest tot 10)/ Safari 3.1/ IOS Safari 3.2/ Android 2.1</b> --- <b>ClassList vanaf eerste deelse ondersteuning: IE10/ Edge 12/ Firefox 3.6/ Chrome 8/ Safari 5.1/ IOS Safari 5.1</b>
 
 - testen op ondersteuning
 - Filter op eerste getypte letter voor overzicht
