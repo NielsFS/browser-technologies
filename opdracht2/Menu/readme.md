@@ -1,6 +1,6 @@
 # Menu component
 
-[pagina](menu.niels-schopman.nl)
+[pagina](http://menu.niels-schopman.nl)
 
 ## Wat doet dit component?
 
@@ -15,7 +15,7 @@ Navigatiemenu gemaakt dat op kleinere schermen/window veranderd in een uitklapba
 ## Bronnen & artikelen
 
 #### caniuse.com
-[link](www.caniuse.com)
+[link](http://www.caniuse.com)
 #### presentatie voorhoede over progressive enhancement (weekly nerd)
 [link](https://moodle.cmd.hva.nl/mod/url/view.php?id=19943)
 #### MDN (implement feature detection)

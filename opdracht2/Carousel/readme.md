@@ -1,6 +1,6 @@
 # Menu component
 
-[pagina](carousel.niels-schopman.nl)
+[pagina](http://carousel.niels-schopman.nl)
 
 ## Wat doet dit component?
 
@@ -15,7 +15,7 @@ Dit carousel scrollt tussen 3 vensters. In die vensters heb ik tekst geplaatst, 
 ## Bronnen & artikelen
 
 #### caniuse.com
-[link](www.caniuse.com)
+[link](http://www.caniuse.com)
 #### presentatie voorhoede over progressive enhancement (weekly nerd)
 [link](https://moodle.cmd.hva.nl/mod/url/view.php?id=19943)
 #### MDN (implement feature detection)
