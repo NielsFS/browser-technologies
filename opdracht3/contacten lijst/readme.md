@@ -2,14 +2,15 @@
 [Klik hier om naar de pagina te gaan](http://minor.niels-schopman.nl)
 
 ## Core functionaliteit
-De basis van mijn component is het weergeven van cotactinformatie uit een lijst van contacten. Je kan door de contactenlijstheengaan, op een contact klikken en zo de contactinformatie weergeven. De basis is op een semantische en logische wijze gemaakt. Wanneer je op een link klikt dan kom je in de core op een nieuwe pagina de juiste contactinformatie. Wanneer css aan staat is de lijst mooi gestijld doormiddel van progressive enhancement en fallbacks. Wanneer Javascript aanstaat dan worden de details op de hoofdpagina weergegeven zonder een nieuwe link te openen.
+De basis van mijn component is het weergeven van cotactinformatie uit een lijst van contacten. Je kan door de contactenlijst gaan, op een contact klikken en zo de contactinformatie weergeven. De basis is op een semantische en logische wijze gemaakt. Wanneer je op een link klikt dan kom je in de core op een nieuwe pagina de juiste contactinformatie. Wanneer css aan staat is de lijst mooi gestijld doormiddel van progressive enhancement en fallbacks. Wanneer Javascript aanstaat dan worden de details op de hoofdpagina weergegeven zonder een nieuwe link te openen.
 
 ## Features/technologie
 
 #### html
 
 - Duidelijke semantische structuur. <b>Alle browsers</b>
-- HTML van features wordt pas gecreerd nadat het getest wordt op ondersteuning, en wordt vervolgens toegevoegd. <b>IE9/ Firefox 3.5/ Chrome 4/ Safari 3.1/ IOS Safari 3.2/ Android 2.1</b>
+- Basis navigatie toegevoegd die tot en met ie6 ondersteund wordt (styling) en alle versies van chrome, firefox etc. <b>since IE6+, Firefox 2+, Chrome 1+ etc</b>
+- HTML van features wordt pas gecreëerd nadat het getest wordt op ondersteuning, en wordt vervolgens toegevoegd. <b>IE9/ Firefox 3.5/ Chrome 4/ Safari 3.1/ IOS Safari 3.2/ Android 2.1</b>
 
 #### CSS
 
@@ -18,6 +19,7 @@ De basis van mijn component is het weergeven van cotactinformatie uit een lijst 
 - gebruik gemaakt Veranderende achtergrondkleur (keyframes & animatie zonder prefixes) <b>IE10/ Edge 12/ Firefox 16/ Chrome 43/ Safari 9/ IOS safari 9.2/</b>
 - responsive (flexbox zonder prefixes)<b> IE 10 deels/ Edge 12/ Firefox 28/ Chrome 29/ Safari 9/ IOS safari 9.2/</b>
 - Verwijderen van border van alle laatste li elementen (last-child) <b> IE 9/ Edge 12/ Firefox 3.5/ Chrome 4/ Safari 3.2/ IOS safari 3.2/</b>
+- navigatie aan de zijkant van scherm zetten met onmouseover events <b> IE 9/ Edge 12/ Firefox 5/ Chrome 4/ Safari 3.2/ IOS safari 3.2/</b>
 
 #### JavaScript
 
@@ -26,7 +28,7 @@ Alle Javascript wordt ondersteund op de volgende browsers:
 
 - testen op ondersteuning
 - Filter op eerste getypte letter voor overzicht
-- Filter op contacten uit lijst
+- Filter op contacten uit lijst 
 - HTML creëren 
 - contactdetails op zelfde pagina als contactenlijst (single page)
 
@@ -43,7 +45,7 @@ IE7
 
 IE8
 
-![IE8](https://lh3.googleusercontent.com/6xNsSYqriRA6k2IMudQ5PuiTF8-tNmrADkyQ9GsRLejcKGwLOd7Qm7EREsKifB28tp_RMCIhof1aMHGbDDPekb-Ft2c8D5hbwTFqazlh0eEeyAmgD32M_K13m-E6n6PwYtgWxan1ZJl4o4nEkjDjX_hOykeeZYrvFu8plu1i2yzWZhbRYLyFuvKZ-DwE064YF2p25JuQuFlA2fvSQK5FbVGQZrKByAeDvEaBVvUhIMz8dgsDfeMEBvVcVzQkRWwp2O1aVA71sXGO7jjDOpqgAQlMgooLsvHfgl-5ksmKxNknDqYCZ4owHDSZ3_Qm3g4ULKzN0zwoQNV74UZ55JwLHNoAdCMW-oct-j5nJNPwB1uTVBlD2cmct-Nlle1mP1CA3aB8i48EB5ec0ub4HOHbf_TgTLPHsBcKcUehLb1FhEif6UcWJHofZV2GJLenWFLqb4xJWaUrBWTWe3HAJMEDh3z5isNy6T-ua-iF9LkDks6FkOmJxkJKq7rA5E3w5qLds9pXZWUjo9O0o6qFjrfas_vrzEE2Smr3sOsaLRAXggKuG_DCcFeYR8SxFnkqtVd71KrZn8o0t-lhgGfJcCR3-0-tGzCJezvjXexUn80=w2004-h1390-no)
+![IE8](https://lh3.googleusercontent.com/l49DzC3-PAwsr4FQP94om7SiubFRysDIQLY0px2ysZqdT8tYoDXTHHPUyMYCe6Az3dpYehfssO5ilTNvI3dcyvYVxUP4sT5IohN2O9ITa5je9Ycjpze95pgbyjJRTYZEVfZh__XaqOBj4I4sLS1QXzzIp6qZ5dvbKLQf-aO28M4OvZOvVerCX-9I554NnWSI1H0Q81KqEnntudSIQRP5Ojb_EWogX_L_-oaCdSsNI8fSIDz5QyaqSJKWcpfaqJipIj7rrYsXtfPjkiNV6Ea_xdLvb4ysB_chSNaU4W0iRtKCY0QtEyxcmCY9cAHV7MkCQZOeB706DWZlxvvJf-3UBdkmxd8s50R3hfTW4UbVN0WuxOy156upL-cb1HpjgYqwNBeehHI9c0omogVbuddicAVaQliTTViQ8JdPgHR-ryGp_kr-WyKmN9_KLwwjsI9_V2L64MkWBtHlrZV3vNZEHQoJwh0C6dfjpvMBMWV9F-aQnt7g5i74vC4WYFGv2w3R-NiQEZUxqascR9OAw5v71wsWkzhsAe5H6BdjYGo-fzDO7driAflZzJPvWI8ZNTEFpQ9TBLdzoWcmZDd7eAUWCQxMk3B6LXIwBAU3sfk=w447-h276-no)
 
 ![IE8](https://lh3.googleusercontent.com/_FAWrCWAxlXpzhoasJIOXh4heU7YCgEsQi-DTI--WKhjDh2NvLaKMJNMsg8b2o3st2ErNJ6J6llKGWdGsGGnC_rPN6NTg8BbHqwLdYlRqcPxC6ltHoLF_HB-bdQz1CL9RvkRGKfjPms_j1LTOLtlvuJzO-MuROrBlRSg0kPxfTbw76_yWT5ahzJFsPCREE7bftaDVPyLgM9ajwpQDWqRs5DYnBLJY_UPuckOdM8Ck0cEm0Oz67uQ_jRnJu84BZynynn64wQdNpT5w8ypdV6M5kA4FbR8w044VLo1_WMNmGFb85XZAMMs2VTbN3WLucZeD4Az6pcRY5msXvNe9WT8WYBPtIimcWRqa5kKVVe1IfyAHq1UAzDm7paLQSYsGWNoNttDw21vRtaC21pPcTeZX6Y72FTV5Mv-aQ2pyfS9F9me0cSyXp-gBVIh1ds2sJQWw0tf1UYihQmlr_VbcG8JoNs7_rRCJGUvmtOWMLX4UPYALns0NkmluA-GKfPu7BT_sh1qHxjeWIIqHzWUrLPaZVErUEYBtCYxTVIXAbNKVzDC7XY6w0rs874FkBpC85-BvnwOcvIdGL7qtEZbEtGrcG1psVed1a9C5FW5zCo=w2002-h1390-no)
 
@@ -72,7 +74,7 @@ IE11
 #### Ontdekte foute op oude browsers:
 
 - search balk staat zonder flexbox niet echt netjes uitgelijnd 
-- verder geen noemenswaardige fouten. Volgensmij is ie que fallbacks en progressive enhancement wel oké.
+- verder geen noemenswaardige fouten. Volgensmij is ie que fallbacks en progressive enhancement goed.
 
 #### Wat ik heb onderzocht en toegepast
 
@@ -92,6 +94,12 @@ IE11
 ![mobiel lijst](https://lh3.googleusercontent.com/le3QO72EDy0H3g5IjyJCyO5W6nHrAN4rqO0kL5F01cYgXs1xopEXav0N0pK_BSPnnU7Se3VT6e3uE5fWwGIL7cAXpUDWCrW32bBoeYMJocAvpYbIN_8YF7hPVu8lg9luLNIFb5mJDGIUoleCkI4DadkX1Fa2Z955PvlwDyZKzogUGvRbTgfl75AYIhx-rstHLiXCKroU_8-LptMB72dTTQ1rofLTJ9vf7Thib8Bkq81l2or2UmrWvpdyDv_F8RHx4SI9I0E5QqPAhEDXh5qDjynZt0wiiYrUvfI9qToDvZAnFqm8uH7WO67pVKBuNEd5_5IkN6R8FD1BkmOBtPszCGd_RU6rPOrZUm2OfOegvBq1nerI4zJS105xSTDi2KRBKYO69n0Tpu4W-i3ha985x8Y1gNXRtVyDwrOIVwtfda7zTz6GNj5CXEOXxgnBTXB7Ljs_H5AU1MUqsSFqhr15C-n_ioXRqv7ZGmQf6v_9Gn9tOCO1HHzvbb1njZ3KLAPSsAqRlUu8QL26wofpgs5yxCr15nj9h_qSoeDoi6hNQr5hf2rZX6a7Y-TFOAnorGAfepp0wbmVkcVzRU9EjDEC-YUQAy74bDEaVF6n4yo=w642-h1390-no)
 
 ![mobiel detail](https://lh3.googleusercontent.com/q5SjEqwAy0CzulEUD7m0FFyVh8aFVxjDGFYpeQEhOmejB1p4efXIYY933kQtIXO8ul3x6ihLVsQbdlwmitju8ATo_t_RTiEHJUDt_ClZ2iLZrmAg6EcKFCyUgYCfgZYrQ7-2chKsAAMnfGUZ0PC8YLxGxwu7jje72t7fyU5rHJG7EXH1C1bm1EXdd9USKKEtvEx9Lu8XkLKODRoWncRUG_UFAxZ9wrOcqXfLv-j7IvtOJ_nnxJRJv-Ehqlp4fJOePIbzHxIAHvoRDakZRVdYynGnHzbXww8pGZzGGQzwoVFHB813h5cKIFhSkUuQgM_ggQ8OSBezHPeNZc_0ej_JgyK1aMwHEY0LNhz_fBXvascLRVZXyXZ8UjZJefWj2xcST1G7tQ2Lm4ltiK6OhiDVlG5D6Qd9u7h3lEAsHnL0gpEt25rBTXXBlx6pZqmJhHUDP8pOOrWr0Jp8Xhu9-AtNpCwOlAmXx77JqevU3SCgkqb5cW3tl5DAbY5JNrMgiXA1r2hA9PUXYPd4WCYA7g3g5vLrVKs5ixQl1y7S-f7YefBb3PJVBeUYhly3oFxyqc9Tcj0z_B8I5Ioj3_v7HvrzHLRv54No7NM_lQ_5dT8=w642-h1390-no) 
+
+## Wat ik heb geleerd & waar ik van opkeek
+
+- HTML5 wordt niet in IE8 ondersteund. Contacten waren eerst doormiddel van de section tag opgemaakt. Echter herkent ie8 die tag niet waardoor alle links van de navigatie niet meer werkten --> moeten we dan geen html5 gebruiken voor dit soort dingen? of in ieder geval sections voor div tags vervangen?
+- CSS selectoren worden niet altijd goed in IE8 ondersteund. Zo kan je niet .side-nav div { ***** } doen. Je moet specifiek met classes werken of alleen met tags. Combinaties zijn niety mogelijk.
+- Er wordt gezecht dat je per feature moet kijken wanneer deze ondersteund werd. Wat ik heb gedaan is alle features die Javascript vereisen onder dezelfde test geschaard. Hierdoor blijft alle basis functionaliteit behouden, enm krijg je vanaf bepaalde ondersteuning toegang tot alle "upgraded" features. Alle css die buiten javascript wordt toegevoegd is degradable en is niet bepalend voor core functionaliteit. 
 
 
 
